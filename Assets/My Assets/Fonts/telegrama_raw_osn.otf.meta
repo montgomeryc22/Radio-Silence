@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: cc225f100264bd9748702e3ab1bc88c4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Telegrama
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 304361a10e231c172bd3a0b8ebda8eaa, type: 3}
+  - {fileID: 12800000, guid: cb87911066e6d101facf22dd82c37fcc, type: 3}
+  - {fileID: 12800000, guid: 40363c4eaf3da8748a227e4fc3ffd3ef, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

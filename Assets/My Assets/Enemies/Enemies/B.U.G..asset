@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291f159770a502d418f0bd0596292345, type: 3}
+  m_Name: B.U.G.
+  m_EditorClassIdentifier: 
+  name: B.U.G.
+  description: 
+  battleSprite: {fileID: -2249254722788104516, guid: 05cc02f738a68e84ab0db756a9fed118, type: 3}
+  type1: 1
+  type2: 2
+  type3: 8
+  maxHp: 35
+  attack: 45
+  defense: 45
+  spAttack: 65
+  spDefense: 65
+  speed: 50
+  learnableMove:
+  - moveBase: {fileID: 11400000, guid: 2d04e36cb399008bba507413a4d175f9, type: 2}
+    level: 1
+  - moveBase: {fileID: 0}
+    level: 0
+  - moveBase: {fileID: 0}
+    level: 0

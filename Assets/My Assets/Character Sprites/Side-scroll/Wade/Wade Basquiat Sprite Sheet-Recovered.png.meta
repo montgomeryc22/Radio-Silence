@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: 147b1f25389c9fa45953dc96c0e94bc3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6917267109233581775
+    second: Wade Basquiat Sprite Sheet-Recovered_0
+  - first:
+      213: -9018197552504474678
+    second: Wade Basquiat Sprite Sheet-Recovered_1
+  - first:
+      213: -1368424092256011634
+    second: Wade Basquiat Sprite Sheet-Recovered_2
+  - first:
+      213: 3952069797273383692
+    second: Wade Basquiat Sprite Sheet-Recovered_3
+  - first:
+      213: -6366285803384692779
+    second: Wade Basquiat Sprite Sheet-Recovered_4
+  - first:
+      213: -324254201819656221
+    second: Wade Basquiat Sprite Sheet-Recovered_46
+  - first:
+      213: -3992717371011700775
+    second: Wade Basquiat Sprite Sheet-Recovered_47
+  - first:
+      213: -3213596970721864288
+    second: Wade Basquiat Sprite Sheet-Recovered_48
+  - first:
+      213: 5281305814312097119
+    second: Wade Basquiat Sprite Sheet-Recovered_49
+  - first:
+      213: 1368969274609052393
+    second: Wade Basquiat Sprite Sheet-Recovered_50
+  - first:
+      213: 7406910098742522414
+    second: Wade Basquiat Sprite Sheet-Recovered_51
+  - first:
+      213: 6242304939792826024
+    second: Wade Basquiat Sprite Sheet-Recovered_52
+  - first:
+      213: -3555724022069829818
+    second: Wade Basquiat Sprite Sheet-Recovered_53
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wade Basquiat Sprite Sheet-Recovered_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 336
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce5c5e59c11fff50800000000000000
+      internalID: 6917267109233581775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade Basquiat Sprite Sheet-Recovered_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 334
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac37ca04b1de8d280800000000000000
+      internalID: -9018197552504474678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade Basquiat Sprite Sheet-Recovered_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 334
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a7efec981620de0800000000000000
+      internalID: -1368424092256011634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade Basquiat Sprite Sheet-Recovered_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 335
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03b70aaa8298d630800000000000000
+      internalID: 3952069797273383692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade Basquiat Sprite Sheet-Recovered_4
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 334
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df94a6bac866a7a0800000000000000
+      internalID: -6366285803384692779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade Basquiat Sprite Sheet-Recovered_46
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 118
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef8c9b7584008bf0800000000000000
+      internalID: -324254201819656221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade Basquiat Sprite Sheet-Recovered_47
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 113
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7e05494b40798c0800000000000000
+      internalID: -3992717371011700775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade Basquiat Sprite Sheet-Recovered_48
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 113
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a51adcd4920763d0800000000000000
+      internalID: -3213596970721864288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade Basquiat Sprite Sheet-Recovered_49
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 111
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55174418a7fa4940800000000000000
+      internalID: 5281305814312097119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade Basquiat Sprite Sheet-Recovered_50
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 76
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea2f795d4e8ff210800000000000000
+      internalID: 1368969274609052393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade Basquiat Sprite Sheet-Recovered_51
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 74
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e223dc6cd71aac660800000000000000
+      internalID: 7406910098742522414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade Basquiat Sprite Sheet-Recovered_52
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 74
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae7404054f11a650800000000000000
+      internalID: 6242304939792826024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade Basquiat Sprite Sheet-Recovered_53
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 76
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f543947d787aec0800000000000000
+      internalID: -3555724022069829818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Wade Basquiat Sprite Sheet-Recovered_4: -6366285803384692779
+      Wade Basquiat Sprite Sheet-Recovered_1: -9018197552504474678
+      Wade Basquiat Sprite Sheet-Recovered_48: -3213596970721864288
+      Wade Basquiat Sprite Sheet-Recovered_50: 1368969274609052393
+      Wade Basquiat Sprite Sheet-Recovered_3: 3952069797273383692
+      Wade Basquiat Sprite Sheet-Recovered_0: 6917267109233581775
+      Wade Basquiat Sprite Sheet-Recovered_2: -1368424092256011634
+      Wade Basquiat Sprite Sheet-Recovered_52: 6242304939792826024
+      Wade Basquiat Sprite Sheet-Recovered_47: -3992717371011700775
+      Wade Basquiat Sprite Sheet-Recovered_51: 7406910098742522414
+      Wade Basquiat Sprite Sheet-Recovered_53: -3555724022069829818
+      Wade Basquiat Sprite Sheet-Recovered_46: -324254201819656221
+      Wade Basquiat Sprite Sheet-Recovered_49: 5281305814312097119
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

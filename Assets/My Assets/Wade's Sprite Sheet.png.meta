@@ -1,0 +1,263 @@
+fileFormatVersion: 2
+guid: 0c8434ab64e6dd44db5fa6a79ead82f2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wade's Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 641
+        width: 39
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a4be91590736649b37e585bc2f13a3
+      internalID: 239483559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade's Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 638
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7af73c2e3bab0849a31f5fc6079d51c
+      internalID: -2029331348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade's Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 638
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23d37ae390b7be4988403a8d579bde4
+      internalID: 2068330549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wade's Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 634
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df29a2e47e92d2f40af168a69a47e065
+      internalID: 627732455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Wade's Sprite Sheet_30: 467287159
+      Wade's Sprite Sheet_20: -1180351143
+      Wade's Sprite Sheet_22: -1987128460
+      Wade's Sprite Sheet_53: 867093362
+      Wade's Sprite Sheet_24: -1882638730
+      Wade's Sprite Sheet_15: 20966021
+      Wade's Sprite Sheet_4: -640034279
+      Wade's Sprite Sheet_50: 1746797331
+      Wade's Sprite Sheet_28: -689380441
+      Wade's Sprite Sheet_31: 1520993620
+      Wade's Sprite Sheet_43: -433458232
+      Wade's Sprite Sheet_19: -2047721754
+      Wade's Sprite Sheet_5: 408614791
+      Wade's Sprite Sheet_9: 1661076052
+      Wade's Sprite Sheet_0: -1239789228
+      Wade's Sprite Sheet_8: -1574464788
+      Wade's Sprite Sheet_40: -753074960
+      Wade's Sprite Sheet_41: 1379242476
+      Wade's Sprite Sheet_55: 192375004
+      Wade's Sprite Sheet_29: 172916457
+      Wade's Sprite Sheet_54: -1473655259
+      Wade's Sprite Sheet_23: -367927494
+      Wade's Sprite Sheet_14: 284227864
+      Wade's Sprite Sheet_36: 1062794024
+      Wade's Sprite Sheet_56: -164689980
+      Wade's Sprite Sheet_13: 627732455
+      Wade's Sprite Sheet_10: 239483559
+      Wade's Sprite Sheet_17: 28520262
+      Wade's Sprite Sheet_21: -1885787678
+      Wade's Sprite Sheet_32: -1375415172
+      Wade's Sprite Sheet_7: 548337015
+      Wade's Sprite Sheet_2: -200767849
+      Wade's Sprite Sheet_25: -615981055
+      Wade's Sprite Sheet_18: -143021724
+      Wade's Sprite Sheet_35: -636798229
+      Wade's Sprite Sheet_49: 110857412
+      Wade's Sprite Sheet_27: 1003867686
+      Wade's Sprite Sheet_44: -1223811613
+      Wade's Sprite Sheet_33: -508828481
+      Wade's Sprite Sheet_42: -2010630489
+      Wade's Sprite Sheet_52: 895338795
+      Wade's Sprite Sheet_39: 505791555
+      Wade's Sprite Sheet_3: -2140646493
+      Wade's Sprite Sheet_1: -1213880255
+      Wade's Sprite Sheet_34: 608192109
+      Wade's Sprite Sheet_6: -1602173185
+      Wade's Sprite Sheet_38: -1223765011
+      Wade's Sprite Sheet_47: 611092970
+      Wade's Sprite Sheet_16: -260113398
+      Wade's Sprite Sheet_45: 1132855315
+      Wade's Sprite Sheet_12: 2068330549
+      Wade's Sprite Sheet_51: 1191357228
+      Wade's Sprite Sheet_37: 1428935313
+      Wade's Sprite Sheet_26: 121126704
+      Wade's Sprite Sheet_46: 77559072
+      Wade's Sprite Sheet_48: 1212782864
+      Wade's Sprite Sheet_11: -2029331348
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
