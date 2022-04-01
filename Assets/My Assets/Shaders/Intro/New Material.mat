@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: New Material
-  m_Shader: {fileID: 4800000, guid: d028b5df22130d119869590282cfa388, type: 3}
+  m_Shader: {fileID: 4800000, guid: 9f51d1fefc4760940801be26107582f0, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -23,8 +23,40 @@ Material:
         m_Texture: {fileID: 2800000, guid: 90800ae9051a441478a7bc02621b7893, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 90800ae9051a441478a7bc02621b7893, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -35,16 +67,34 @@ Material:
     - _BlendStay: 1
     - _BlendTimeScaling: 0.1
     - _BlendWarp: 0.25
+    - _BumpScale: 1
     - _CompressionX: 1
     - _CompressionY: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
     - _DistortX: 1
     - _DistortY: 1
+    - _DstBlend: 0
     - _FrequencyX: 0.81
     - _FrequencyY: 16.55
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
     - _TextureSize: 256
     - _TimeScalingX: 24.4
     - _TimeScalingY: 0.56
+    - _UVSec: 0
+    - _ZWrite: 1
     m_Colors:
     - _BlendTintColor: {r: 0.8726415, g: 0.94557333, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MainTintColor: {r: 0.8745099, g: 0.9450981, b: 1, a: 1}
   m_BuildTextureStacks: []
