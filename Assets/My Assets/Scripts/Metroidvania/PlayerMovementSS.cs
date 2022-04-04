@@ -44,14 +44,14 @@ public class PlayerMovementSS : MonoBehaviour {
     }
 
     // Snippet used for jump implementation.
-    if(isGrounded == true && Input.GetKeyDown(KeyCode.Space))
+    if(isGrounded == true && Input.GetButtonDown("Jump"))
     {
       isJumping = true;
       jumpTimeCounter = jumpTime;
       rb.velocity = Vector2.up * jumpForce;
     }
 
-    if (Input.GetKey(KeyCode.Space) && isJumping == true)
+    if (Input.GetButtonDown("Jump") && isJumping == true)
     {
       if(jumpTimeCounter > 0)
       {
