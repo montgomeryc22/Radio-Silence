@@ -9,6 +9,9 @@ public class PlayerMovementSS : MonoBehaviour {
   public float jumpForce;
   public float moveInput;
 
+  bool isTouchingFront;
+  public Transform frontCheck;
+  bool wallSliding;
 
   private bool isGrounded;
   public Transform feetPos;
@@ -17,6 +20,7 @@ public class PlayerMovementSS : MonoBehaviour {
 
   private float jumpTimeCounter;
   public float jumpTime;
+  public float wallSlidingSpeed;
   private bool isJumping;
 
   void Start()
@@ -33,6 +37,19 @@ public class PlayerMovementSS : MonoBehaviour {
   void Update()
   {
     isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
+    isTouchingFront = Physics2D.OverlapCircle(frontCheck.position, checkRadius, whatIsGround);
+
+    if (isTouchingFront == true && isGrounded == false && moveInput !=0)
+    {
+      wallSliding = true;
+    } else {
+      wallSliding = false;
+    }
+
+    if (wallSliding)
+    {
+      rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+    }
 
     // Flip character based on input.
     if(moveInput > 0)
