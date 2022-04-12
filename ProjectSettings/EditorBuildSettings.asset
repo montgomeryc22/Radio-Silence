@@ -20,4 +20,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/My Assets/Scenes/Menus/GameOver/EndOfDemo.unity
     guid: f98f5199ff03f14988ba380d5e037de8
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 0b20d64b929b862e586cf2eaa64c4116, type: 2}

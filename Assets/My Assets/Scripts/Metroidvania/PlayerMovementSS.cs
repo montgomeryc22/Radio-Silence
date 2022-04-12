@@ -1,88 +1,89 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class PlayerMovementSS : MonoBehaviour {
+public class PlayerMovementSS : MonoBehaviour
+{
+    InputControls controls;
 
-  private Rigidbody2D rb;
-  public float speed;
-  public float jumpForce;
-  public float moveInput;
+    public Rigidbody2D playerRB;
+    public Animator animator;
 
-  bool isTouchingFront;
-  public Transform frontCheck;
-  bool wallSliding;
+    public Transform groundCheck;
+    public LayerMask groundLayer;
 
-  private bool isGrounded;
-  public Transform feetPos;
-  public float checkRadius;
-  public LayerMask whatIsGround;
+    float direction = 0;
+    public float speed = 8f;
+    public bool isFacingRight = true;
+    public float jumpForce = 5f;
+    public float horizontal;
 
-  private float jumpTimeCounter;
-  public float jumpTime;
-  public float wallSlidingSpeed;
-  private bool isJumping;
+    bool isGrounded;
+    int numberOfJumps = 0;
 
-  void Start()
-  {
-      rb = GetComponent<Rigidbody2D>();
-  }
 
-  void FixedUpdate()
-  {
-    moveInput = Input.GetAxisRaw("Horizontal");
-    rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
-  }
 
-  void Update()
-  {
-    isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
-    isTouchingFront = Physics2D.OverlapCircle(frontCheck.position, checkRadius, whatIsGround);
-
-    if (isTouchingFront == true && isGrounded == false && moveInput !=0)
+    private void Awake()
     {
-      wallSliding = true;
-    } else {
-      wallSliding = false;
+        controls = new InputControls();
+        controls.Enable();
+
+        controls.Player.Movement.performed += ctx =>
+        {
+            direction = ctx.ReadValue<float>();
+        };
+
+        controls.Player.Jump.performed += ctx => Jump();
     }
 
-    if (wallSliding)
+    void FixedUpdate()
     {
-      rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
+        animator.SetBool("isGrounded", isGrounded);
+
+        playerRB.velocity = new Vector2(direction * speed * Time.fixedDeltaTime, playerRB.velocity.y);
+        animator.SetFloat("speed", Mathf.Abs(direction));
+
+        if (isFacingRight && direction < 0 || !isFacingRight && direction >0 )
+            Flip();
     }
 
-    // Flip character based on input.
-    if(moveInput > 0)
+    void Flip()
     {
-      transform.eulerAngles = new Vector3(0, 0, 0);
-    } else if (moveInput < 0)
-    {
-      transform.eulerAngles = new Vector3(0, 180, 0);
+        isFacingRight = !isFacingRight;
+        transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
     }
 
-    // Snippet used for jump implementation.
-    if(isGrounded == true && Input.GetButtonDown("Jump"))
+    void Jump()
     {
-      isJumping = true;
-      jumpTimeCounter = jumpTime;
-      rb.velocity = Vector2.up * jumpForce;
+        if (isGrounded)
+        {
+            numberOfJumps = 0;
+            playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
+            numberOfJumps++;
+        }
+        else
+        {
+            if(numberOfJumps == 1)
+            {
+                playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
+                numberOfJumps++;
+            }
+        }
     }
 
-    if (Input.GetButtonDown("Jump") && isJumping == true)
+    public void Move(InputAction.CallbackContext context)
     {
-      if(jumpTimeCounter > 0)
-      {
-        rb.velocity = Vector2.up * jumpForce;
-        jumpTimeCounter -= Time.deltaTime;
-      } else
-      {
-        isJumping = false;
-      }
+      horizontal = context.ReadValue<Vector2>().x;
     }
 
-    if(Input.GetKeyUp(KeyCode.Space))
+    private void OnEnable()
     {
-      isJumping = false;
+        controls.Enable();
     }
-  }
+    private void OnDisable()
+    {
+        controls.Disable();
+    }
 }
