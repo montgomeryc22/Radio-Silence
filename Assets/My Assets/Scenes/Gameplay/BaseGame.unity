@@ -15779,6 +15779,7 @@ GameObject:
   - component: {fileID: 552754545}
   - component: {fileID: 552754546}
   - component: {fileID: 552754547}
+  - component: {fileID: 552754548}
   m_Layer: 0
   m_Name: Wade
   m_TagString: Player1
@@ -16035,20 +16036,22 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552754537}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b6f7468de47f7444b00adb6e90e95db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4.5
-  isFacingRight: 1
-  jumpForce: 11
+  playerRB: {fileID: 552754541}
+  animator: {fileID: 552754538}
   groundCheck: {fileID: 1952161770}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  playerRB: {fileID: 552754541}
-  animator: {fileID: 552754538}
+  speed: 4.5
+  isFacingRight: 1
+  jumpForce: 11
+  horizontal: 0
+  numberOfJumps: 0
 --- !u!114 &552754545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16316,6 +16319,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &552754548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552754537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9873ae9aff21cce2b1c1468490593b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lmWalls:
+    serializedVersion: 2
+    m_Bits: 64
+  fJumpVelocity: 10
+  feetPos: {fileID: 1952161770}
+  checkRadius: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  fJumpPressedRememberTime: 0.2
+  fGroundedRememberTime: 0.25
+  fHorizontalAcceleration: 1
+  fHorizontalDampingBasic: 0.4
+  fHorizontalDampingWhenStopping: 0.5
+  fHorizontalDampingWhenTurning: 0.5
+  fCutJumpHeight: 0.5
 --- !u!1 &557217569
 GameObject:
   m_ObjectHideFlags: 0
@@ -34317,7 +34348,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9660378, y: 1}
+    m_SensorSize: {x: 2.021148, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -60550,7 +60581,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9660378, y: 1}
+    m_SensorSize: {x: 2.021148, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -77484,7 +77515,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9660378, y: 1}
+    m_SensorSize: {x: 2.021148, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -86932,8 +86963,9 @@ GameObject:
   - component: {fileID: 1269773991}
   - component: {fileID: 1269773993}
   - component: {fileID: 1269773992}
+  - component: {fileID: 1269773994}
   m_Layer: 6
-  m_Name: Square
+  m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86947,8 +86979,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269773990}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 124.53, y: -4.13, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 97, y: -4.44, z: 0}
+  m_LocalScale: {x: 1, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 700698215}
@@ -87022,7 +87054,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.2735849, g: 0.1716358, b: 0.1716358, a: 1}
+  m_Color: {r: 0.4811321, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -87032,6 +87064,231 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1269773994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269773990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: 9754d4abda502c6458053d5ed8e4fc5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: FSM
+    startState: State 1
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 155
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: COLLISION ENTER 2D
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: State 2
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: State 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 372
+        y: 95
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.DestroySelf
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 230cc800
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000001100000011000000
+        paramName:
+        - delay
+        - realTime
+        - detachChildren
+        paramDataPos: 000000000000000001000000
+        paramByteDataSize: 000000000000000000000000
+    events:
+    - name: COLLISION ENTER 2D
+      isSystemEvent: 1
+      isGlobal: 0
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 
+    description: 
+    docUrl: 
+    showStateLabel: 0
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    outVariableIndices: 
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    OutputEvents: []
+    RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 225
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
 --- !u!1 &1270271892
 GameObject:
   m_ObjectHideFlags: 0
@@ -114435,11 +114692,11 @@ GameObject:
   - component: {fileID: 1615838348}
   - component: {fileID: 1615838347}
   - component: {fileID: 1615838346}
-  - component: {fileID: 1615838344}
   - component: {fileID: 1615838345}
   - component: {fileID: 1615838350}
   - component: {fileID: 1615838351}
   - component: {fileID: 1615838352}
+  - component: {fileID: 1615838353}
   m_Layer: 0
   m_Name: Kameron
   m_TagString: Player3
@@ -114464,27 +114721,6 @@ Transform:
   m_Father: {fileID: 2038635496}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1615838344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1615838342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b6f7468de47f7444b00adb6e90e95db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
-  isFacingRight: 1
-  jumpForce: 12
-  groundCheck: {fileID: 535651657}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 1
-  playerRB: {fileID: 1615838348}
-  animator: {fileID: 1615838346}
 --- !u!82 &1615838345
 AudioSource:
   m_ObjectHideFlags: 0
@@ -114946,6 +115182,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &1615838353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615838342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9873ae9aff21cce2b1c1468490593b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lmWalls:
+    serializedVersion: 2
+    m_Bits: 2147483647
+  fJumpVelocity: 12
+  feetPos: {fileID: 535651657}
+  checkRadius: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 2147483647
+  fJumpPressedRememberTime: 0.2
+  fGroundedRememberTime: 0.25
+  fHorizontalAcceleration: 1
+  fHorizontalDampingBasic: 0.45
+  fHorizontalDampingWhenStopping: 0.5
+  fHorizontalDampingWhenTurning: 0.5
+  fCutJumpHeight: 0.5
 --- !u!1 &1617541563
 GameObject:
   m_ObjectHideFlags: 0
@@ -125060,11 +125324,12 @@ GameObject:
   - component: {fileID: 1830582486}
   - component: {fileID: 1830582485}
   - component: {fileID: 1830582484}
-  - component: {fileID: 1830582482}
   - component: {fileID: 1830582483}
   - component: {fileID: 1830582488}
   - component: {fileID: 1830582489}
   - component: {fileID: 1830582490}
+  - component: {fileID: 1830582491}
+  - component: {fileID: 1830582492}
   m_Layer: 0
   m_Name: Zarria
   m_TagString: Player2
@@ -125089,27 +125354,6 @@ Transform:
   m_Father: {fileID: 2038635496}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
---- !u!114 &1830582482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1830582480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b6f7468de47f7444b00adb6e90e95db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 7
-  isFacingRight: 1
-  jumpForce: 9.5
-  groundCheck: {fileID: 490707762}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 1
-  playerRB: {fileID: 1830582486}
-  animator: {fileID: 1830582484}
 --- !u!82 &1830582483
 AudioSource:
   m_ObjectHideFlags: 0
@@ -125593,6 +125837,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &1830582491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830582480}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5fc20d7d93c074a9a9efc52578e8ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRB: {fileID: 1830582486}
+  animator: {fileID: 1830582484}
+  groundCheck: {fileID: 490707762}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  speed: 8
+  isFacingRight: 1
+  jumpForce: 5
+  horizontal: 0
+  numberOfJumps: 0
+--- !u!114 &1830582492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830582480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9873ae9aff21cce2b1c1468490593b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lmWalls:
+    serializedVersion: 2
+    m_Bits: 2147483647
+  fJumpVelocity: 8
+  feetPos: {fileID: 490707762}
+  checkRadius: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 2147483647
+  fJumpPressedRememberTime: 0.2
+  fGroundedRememberTime: 0.25
+  fHorizontalAcceleration: 1
+  fHorizontalDampingBasic: 0.3
+  fHorizontalDampingWhenStopping: 0
+  fHorizontalDampingWhenTurning: 0
+  fCutJumpHeight: 0
 --- !u!1 &1831251376 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1701711770391447784, guid: 199878dae968906228ad87d98d42728d, type: 3}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovementSS : MonoBehaviour
+public class PlayerMovementZarria : MonoBehaviour
 {
     InputControls controls;
 
@@ -62,14 +62,6 @@ public class PlayerMovementSS : MonoBehaviour
             numberOfJumps = 0;
             playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
             numberOfJumps++;
-        }
-        else
-        {
-            if(numberOfJumps == 1)
-            {
-                playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
-                numberOfJumps++;
-            }
         }
     }
 
