@@ -14,6 +14,9 @@ public class PlayerMovementKameron : MonoBehaviour {
   public float checkRadius;
   public LayerMask whatIsGround;
 
+  public SpriteRenderer sprite;
+  GameObject FrontSpace;
+
   float fJumpPressedRemember = 0;
   [SerializeField]
   float fJumpPressedRememberTime = 0.2f;
@@ -49,6 +52,14 @@ void Update ()
       Vector2 v2GroundedBoxCheckPosition = (Vector2)transform.position + new Vector2(0, -0.01f);
       Vector2 v2GroundedBoxCheckScale = (Vector2)transform.localScale + new Vector2(-0.02f, 0);
       bool bGrounded = Physics2D.OverlapBox(v2GroundedBoxCheckPosition, v2GroundedBoxCheckScale, 0, lmWalls);
+
+      if (Input.GetAxisRaw("Horizontal") > 0)
+      {
+        sprite.flipX = false;
+      } else if (Input.GetAxisRaw("Horizontal") < 0)
+      {
+        sprite.flipX = true;
+      }
 
       fGroundedRemember -= Time.deltaTime;
       if (bGrounded)

@@ -12,21 +12,30 @@ public class ToggleCamera : MonoBehaviour {
   public GameObject Zarria;
   public GameObject Kameron;
 
+  public GameObject Enemy;
+
   public GameObject WHud;
   public GameObject ZHud;
   public GameObject KHud;
 
-
 // Start Method
 void Start()
 {
+
+  Wade.GetComponent<PlayerMovementKameron>().enabled = true;
+  Zarria.GetComponent<PlayerMovementKameron>().enabled = false;
+  Kameron.GetComponent<PlayerMovementKameron>().enabled = false;
+
+  Wade.GetComponent<AudioSource>().enabled = true;
+  Zarria.GetComponent<AudioSource>().enabled = false;
+  Kameron.GetComponent<AudioSource>().enabled = false;
+
+  Enemy.GetComponent<PingPong>().enabled = false;
+
+
   WCam.SetActive(true);
   ZCam.SetActive(false);
   KCam.SetActive(false);
-
-  Wade.SetActive(true);
-  Zarria.SetActive(false);
-  Kameron.SetActive(false);
 
   WHud.SetActive(true);
   ZHud.SetActive(false);
@@ -41,9 +50,15 @@ void Update ()
         ZCam.SetActive(false);
         KCam.SetActive(false);
 
-        Wade.SetActive(true);
-        Zarria.SetActive(false);
-        Kameron.SetActive(false);
+        Wade.GetComponent<PlayerMovementKameron>().enabled = true;
+        Zarria.GetComponent<PlayerMovementKameron>().enabled = false;
+        Kameron.GetComponent<PlayerMovementKameron>().enabled = false;
+
+        Enemy.GetComponent<PingPong>().enabled = false;
+
+        Wade.GetComponent<AudioSource>().enabled = true;
+        Zarria.GetComponent<AudioSource>().enabled = false;
+        Kameron.GetComponent<AudioSource>().enabled = false;
 
         WHud.SetActive(true);
         ZHud.SetActive(false);
@@ -54,9 +69,16 @@ void Update ()
         ZCam.SetActive(true);
         KCam.SetActive(false);
 
-        Wade.SetActive(false);
-        Zarria.SetActive(true);
-        Kameron.SetActive(false);
+        Wade.GetComponent<PlayerMovementKameron>().enabled = false;
+        Zarria.GetComponent<PlayerMovementKameron>().enabled = true;
+        Kameron.GetComponent<PlayerMovementKameron>().enabled = false;
+
+        Enemy.GetComponent<PingPong>().enabled = false;
+
+        Wade.GetComponent<AudioSource>().enabled = false;
+        Zarria.GetComponent<AudioSource>().enabled = true;
+        Kameron.GetComponent<AudioSource>().enabled = false;
+
 
         WHud.SetActive(false);
         ZHud.SetActive(true);
@@ -68,9 +90,15 @@ void Update ()
         ZCam.SetActive(false);
         KCam.SetActive(true);
 
-        Wade.SetActive(false);
-        Zarria.SetActive(false);
-        Kameron.SetActive(true);
+        Wade.GetComponent<PlayerMovementKameron>().enabled = false;
+        Zarria.GetComponent<PlayerMovementKameron>().enabled = false;
+        Kameron.GetComponent<PlayerMovementKameron>().enabled = true;
+
+        Enemy.GetComponent<PingPong>().enabled = true;
+
+        Wade.GetComponent<AudioSource>().enabled = false;
+        Zarria.GetComponent<AudioSource>().enabled = false;
+        Kameron.GetComponent<AudioSource>().enabled = true;
 
         WHud.SetActive(false);
         ZHud.SetActive(false);

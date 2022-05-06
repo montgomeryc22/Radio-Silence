@@ -5,11 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - Red City
-  - Orange City
-  - Blue City
-  - Underground
-  - Dark Blue City
   - Ground
   - Player1
   - Player2

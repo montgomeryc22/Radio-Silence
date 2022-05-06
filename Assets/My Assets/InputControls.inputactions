@@ -257,7 +257,7 @@
                 {
                     "name": "",
                     "id": "43ff2756-b7ba-4ef1-b69d-c77567b357b0",
-                    "path": "<Gamepad>/dpad/up",
+                    "path": "<Gamepad>/leftShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
@@ -268,18 +268,7 @@
                 {
                     "name": "",
                     "id": "5b850a68-48fa-4c55-b218-4dcab8f027d1",
-                    "path": "<Gamepad>/dpad/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "SwitchCharacter",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b4bbb18e-9203-46b7-9f9f-a649dc3464e1",
-                    "path": "<Gamepad>/dpad/right",
+                    "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
