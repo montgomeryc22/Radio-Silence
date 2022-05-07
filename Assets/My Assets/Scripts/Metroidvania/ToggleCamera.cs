@@ -13,6 +13,7 @@ public class ToggleCamera : MonoBehaviour {
   public GameObject Kameron;
 
   public GameObject Enemy;
+  public GameObject Jam;
 
   public GameObject WHud;
   public GameObject ZHud;
@@ -31,6 +32,7 @@ void Start()
   Kameron.GetComponent<AudioSource>().enabled = false;
 
   Enemy.GetComponent<PingPong>().enabled = false;
+  Jam.GetComponent<AudioSource>().enabled = false;
 
 
   WCam.SetActive(true);
@@ -55,6 +57,8 @@ void Update ()
         Kameron.GetComponent<PlayerMovementKameron>().enabled = false;
 
         Enemy.GetComponent<PingPong>().enabled = false;
+        Jam.GetComponent<AudioSource>().enabled = false;
+
 
         Wade.GetComponent<AudioSource>().enabled = true;
         Zarria.GetComponent<AudioSource>().enabled = false;
@@ -74,6 +78,8 @@ void Update ()
         Kameron.GetComponent<PlayerMovementKameron>().enabled = false;
 
         Enemy.GetComponent<PingPong>().enabled = false;
+        Jam.GetComponent<AudioSource>().enabled = false;
+
 
         Wade.GetComponent<AudioSource>().enabled = false;
         Zarria.GetComponent<AudioSource>().enabled = true;
@@ -95,6 +101,8 @@ void Update ()
         Kameron.GetComponent<PlayerMovementKameron>().enabled = true;
 
         Enemy.GetComponent<PingPong>().enabled = true;
+        Jam.GetComponent<AudioSource>().enabled = true;
+
 
         Wade.GetComponent<AudioSource>().enabled = false;
         Zarria.GetComponent<AudioSource>().enabled = false;

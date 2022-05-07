@@ -9,6 +9,9 @@ public class PlayerMovementKameron : MonoBehaviour {
   float fJumpVelocity = 5;
 
   Rigidbody2D rb;
+  BoxCollider2D boxCollider;
+  private bool isOnPlatform;
+  private Rigidbody2D platformRBody;
   private bool isGrounded;
   public Transform feetPos;
   public float checkRadius;
@@ -99,5 +102,31 @@ void Update ()
           fHorizontalVelocity *= Mathf.Pow(1f - fHorizontalDampingBasic, Time.deltaTime * 10f);
 
       rb.velocity = new Vector2(fHorizontalVelocity, rb.velocity.y);
+  }
+
+  void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.tag == "Platform")
+        {
+            platformRBody = col.gameObject.GetComponent<Rigidbody2D>();
+            isOnPlatform = true;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        if(col.gameObject.tag == "Platform")
+        {
+            isOnPlatform = false;
+            platformRBody = null;
+        }
+    }
+
+    void FixedUpdate()
+    {
+    if(isOnPlatform)
+    {
+        rb.velocity = rb.velocity + platformRBody.velocity;
+    }
   }
 }

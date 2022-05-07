@@ -5,18 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/My Assets/Scenes/Menus/Opening Graphics/Graphic #2.unity
     guid: c2b7d0467f512730b88513c0c2ddf883
-  - enabled: 1
+  - enabled: 0
     path: Assets/My Assets/Scenes/Menus/Opening Graphics/Opening Graphic.unity
     guid: 9a3fc2865bbb0f14fbbf4c9d3bcb2a2f
   - enabled: 1
     path: Assets/My Assets/Scenes/Menus/TitleScreen/Title.unity
     guid: aa6eb2c7c5d886f4fae050a5aaf7ffef
   - enabled: 1
-    path: Assets/My Assets/Scenes/Gameplay/GalleryPlatformer.unity
-    guid: 8a461424018ea8f36a6c7e448c9c2a05
+    path: Assets/My Assets/Scenes/Gameplay/TilemapScene.unity
+    guid: 303744bdf3791ed84a9e96e109b6fdcc
   - enabled: 1
     path: Assets/My Assets/Scenes/Menus/GameOver/EndOfDemo.unity
     guid: f98f5199ff03f14988ba380d5e037de8
